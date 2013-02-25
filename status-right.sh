@@ -58,7 +58,7 @@ cpu+=(["separator"]="${separator_left_bold}")
 declare -A load
 load+=(["script"]="${segments_path}/load.sh")
 load+=(["foreground"]="#FFFFFF")
-load+=(["background"]="#996666")
+load+=(["background"]="#5D5B52")
 load+=(["separator"]="${separator_left_bold}")
 register_segment "load"
 
@@ -91,23 +91,23 @@ fi
 
 declare -A date_day
 date_day+=(["script"]="${segments_path}/date_day.sh")
-date_day+=(["foreground"]="colour255")
-date_day+=(["background"]="colour127")
+date_day+=(["foreground"]="#F8762E")
+date_day+=(["background"]="#222222")
 date_day+=(["separator"]="${separator_left_bold}")
 register_segment "date_day"
 
 declare -A date_full
 date_full+=(["script"]="${segments_path}/date_full.sh")
-date_full+=(["foreground"]="colour255")
-date_full+=(["background"]="#ff6666")
+date_full+=(["foreground"]="#FFFFFF")
+date_full+=(["background"]="#5D5B52")
 date_full+=(["separator"]="${separator_left_bold}")
 #date_full+=(["separator_fg"]="default")
 register_segment "date_full"
 
 declare -A time
 time+=(["script"]="${segments_path}/time.sh")
-time+=(["foreground"]="colour255")
-time+=(["background"]="#996666")
+time+=(["foreground"]="#F8762E")
+time+=(["background"]="#222222")
 time+=(["separator"]="${separator_left_bold}")
 #time+=(["separator_fg"]="default")
 register_segment "time"

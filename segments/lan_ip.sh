@@ -3,8 +3,8 @@
 
 # TODO fix the mac part so it also can search for interfaces like the Linux one can.
 if [ "$PLATFORM" == "mac" ]; then
-	nic0="en0"
-	nic1="en1"
+	nic0="en2"
+	nic1="en0"
     # get wired lan ip
     lan_ip=`/sbin/ifconfig $nic0 2>/dev/null | grep 'inet ' | awk '{print $2}'`
     # if no wired lan, get wireless lan ip
